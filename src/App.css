@@ -1,0 +1,99 @@
+* {
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box; /* Add this to include padding and border in element's total width and height */
+}
+
+.App {
+  background: linear-gradient(45deg, white, skyblue);
+  min-height: 100vh; /* Use min-height to ensure content is visible */
+  width: 100%;
+  padding: 1rem; /* Add some padding */
+}
+
+h1 {
+  color: rgb(6, 49, 128);
+  font-size: 2.5rem; /* Adjust the font size for better readability */
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow the form to wrap on smaller screens */
+  margin-bottom: 1rem;
+}
+
+form input {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10px 0 10px 0;
+  background: linear-gradient(45deg, rgb(66, 64, 64), white);
+  height: 2rem;
+  width: 80%;
+  max-width: 500px; /* Set a maximum width */
+  padding: 0 0.5rem; /* Add padding inside the input */
+}
+
+form button {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  background: linear-gradient(60deg, blue, rgb(20, 102, 184));
+  border: none;
+  height: 2rem;
+  width: 30%;
+  max-width: 150px; /* Set a maximum width */
+  color: white;
+  border-radius: 15px 0 15px 0;
+  cursor: pointer;
+}
+
+.list {
+  width: 100%;
+  max-width: 600px; /* Set a maximum width for the list */
+  margin: 0 auto; /* Center the list horizontally */
+  padding: 0 1rem; /* Add some padding */
+}
+
+.list li {
+  list-style-type: none;
+  background-color: rgb(138, 17, 194);
+  margin-bottom: 0.7rem;
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  margin-left: 1rem;
+  cursor: pointer; /* Change cursor to pointer to indicate clickable elements */
+}
+
+.listdecoration {
+  text-decoration: none;
+}
+
+.listdecorationgain {
+  text-decoration: line-through;
+  background-color: rgb(9, 180, 40) !important;
+  color: rgb(4, 108, 4) !important;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller font size for headers */
+  }
+
+  form input,
+  form button {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max width */
+    margin: 0.5rem 0; /* Margin adjustments */
+  }
+}
